@@ -1,8 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
-
-First, run the development server:
 
 ```bash
 npm run dev
@@ -12,25 +8,44 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Code Editor PlatformA web-based interactive code editor built with Next.js and CodeMirror that allows users to solve programming problems in multiple languages. The platform provides real-time code execution with support for Python, JavaScript, TypeScript, Go, PHP, Rust, and C++.
+Features🌐 Multi-language support: Python, JavaScript, TypeScript, Go, PHP, Rust, C++
+📝 Rich editor with syntax highlighting via CodeMirror
+🎯 Problem statement panel with input/output format, constraints, and sample test cases
+🧪 Sample test case runner and "Run All Tests" simulation
+🕒 Real-time timer for tracking problem-solving duration
+🌓 Light/Dark mode with system theme auto-detection
+💾 Code persistence via localStorage
+➕ Bonus Feature: Backend API to compile and run user code securely
+🔁 Bonus Feature: "Next Question" button to navigate through problems dynamically
+How to Run LocallyPrerequisitesNode.js >= 18
+npm or yarn
+1. Clone the repositorygit clone https://github.com/your-username/code-editor-platform.git
+cd code-editor-platform2. Install dependenciesnpm install
+# or
+yarn install3. Run the development servernpm run dev
+# or
+yarn dev4. Open in browserGo to http://localhost:3000
+API EndpointPOST /api/run-codeExecutes the provided code in a secure temporary environment.
+Request Body{
+  "language": "python",
+  "code": "print('Hello World')",
+  "input": "optional input here"
+}Response{
+  "stdout": "Hello World\n",
+  "stderr": "",
+  "error": null
+}Project Structure.
+├── app/
+│   └── page.tsx            # Main editor UI and logic
+├── pages/api/
+│   └── run-code.ts         # Backend code execution handler
+├── public/
+├── styles/
+├── README.md               # This file
+└── package.jsonLibraries Usedcodemirror for the in-browser code editor
+@codemirror/lang-* extensions for language support
+next, react, and typescript for the frontend
+Node's child_process and fs modules for backend code execution
+Feel free to fork and enhance the platform. Contributions are welcome!
+✨ Built with love to make coding more interactive and accessible!
