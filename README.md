@@ -87,3 +87,13 @@ g++ (for C++)
 🎨 Auto theme toggle based on system preference
 
 ⏱️ Timer to track time spent per problem
+
+
+
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/7bb0be57-1eee-465d-b310-5682dd4518a6" />
+
+
+
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/ccc188c0-48c3-4581-a8c3-71033458acd8" />
+
+
