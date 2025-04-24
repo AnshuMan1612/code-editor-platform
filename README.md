@@ -48,21 +48,29 @@ Edit
 
 ```bash
 git clone https://github.com/yourusername/code-editor-platform.git
+
 cd code-editor-platform
+```
 2. Install Dependencies
+```
 bash
 Copy
 Edit
 npm install
 # or
 yarn
+```
 3. Run the Development Server
+```
 bash
 Copy
 Edit
 npm run dev
 # or
 yarn dev
+```
+
+
 Visit http://localhost:3000 to view the app.
 
 ✅ Important: Ensure your machine has the following compilers/interpreters installed:
