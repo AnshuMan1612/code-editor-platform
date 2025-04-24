@@ -34,7 +34,24 @@ A powerful and extensible multi-language code editor built with **Next.js**, **C
 
 ## 📂 Project Structure
 
-. ├── app/ │ └── page.tsx # Main frontend UI with CodeMirror editor ├── app/api/run-code/ │ └── route.ts # Backend API for code execution ├── public/ ├── styles/ ├── README.md # Project overview and guide └── ...
+
+| Path                            | Description                                      |
+|---------------------------------|--------------------------------------------------|
+| `app/`                          | Main Next.js application directory               |
+| ├── `api/run-code/route.ts`     | API route to handle code execution logic         |
+| └── `page.tsx`                  | Main frontend page with CodeMirror editor        |
+| `components/`                   | Reusable React components (e.g., Timer, Header)  |
+| `constants/`                    | Language and problem metadata definitions        |
+| `lib/`                          | Utility functions (e.g., problem logic, helpers) |
+| `public/`                       | Static assets like icons and images              |
+| `styles/`                       | Tailwind and global styling files                |
+| `types/`                        | TypeScript type definitions                      |
+| `.env.local`                    | Local environment variables                      |
+| `.gitignore`                    | Specifies files to ignore in git                 |
+| `next.config.js`                | Next.js configuration settings                   |
+| `package.json`                  | Project metadata and dependencies                |
+| `tsconfig.json`                 | TypeScript configuration                         |
+| `README.md`                     | Project overview and usage guide                 |
 
 yaml
 Copy
